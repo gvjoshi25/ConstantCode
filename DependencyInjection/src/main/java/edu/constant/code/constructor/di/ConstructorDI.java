@@ -6,6 +6,7 @@ public class ConstructorDI {
 
 	public ConstructorDI(ConstructorDIHelper helper) {
 		this.helper = helper;
+		System.out.println("Inside Constructor");
 	}
 
 	public void verify() {

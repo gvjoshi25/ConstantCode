@@ -6,6 +6,7 @@ public class SetterDI {
 
 	public void setSetterDI(SetterDIHelper setterHelper) {
 		this.setterHelper = setterHelper;
+		System.out.println("Inside Setter method.");
 	}
 
 	public void verify() {
