@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="ConstructorDI" class="edu.constant.code.constructor.di.ConstructorDI">
+		<constructor-arg>
+			<bean class="edu.constant.code.constructor.di.ConstructorDIHelper" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="ConstructorDIHelper" class="edu.constant.code.constructor.di.ConstructorDIHelper" />
+
+	<bean id="setterDI" class="edu.constant.code.setter.di.SetterDI">
+		<property name="setterDI">
+			<ref bean="SetterDIHelper" />
+		</property>
+	</bean>
+
+	<bean id="SetterDIHelper" class="edu.constant.code.setter.di.SetterDIHelper" />
+
+
+</beans>
