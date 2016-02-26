@@ -1,0 +1,20 @@
+Assumptions :-
+
+1. Input patterns are strict. it is not case sensitive.
+2. Roman no must be in capital letters.
+3. Type 1 - Roman Assignment e.g. glob is I
+	Sentence must be in following pattern :- 
+	"[roman_assignment] is I"
+4. Type 2 - assignment e.g. glob glob silver is 34 Credits
+	Sentence must be in following pattern :- 
+	"[roman_assignment] [roman_assignment]... [credit_assignment] is [value in digit] Credits"
+5. Type 3 - How much question e.g. how much is pish tegj glob glob ?
+	Sentence must be in following pattern :- 
+	"how much is [roman_assignment] [roman_assignment]..... ?"
+6. Type 4 - How many question e.g. how many Credits is glob prok Gold ?
+	Sentence must be in following pattern :- 
+	"how many Credits is [roman_assignment] [roman_assignment]... [credit_assignment]... [roman_assignment] ?"
+7. Provide input data in new line for each type of sentence.
+
+
+	.... means n number of occurrence
