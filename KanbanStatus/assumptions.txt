@@ -1,0 +1,7 @@
+Assumptions are :-
+
+1. Card name & Board name are static. ( e.g. "In Progress [3]" card name can not be changed to "InProgress" or anything else.)
+2. Key & token are static as it is mentioned in Trello API that they are not planning to make it dynamic.
+3. All the cards are created in "In Progress" checklist. 
+	If a card is created in "Code Review" stage, then it is moved to "Done", total difference will be between these two stages.
+4. 
